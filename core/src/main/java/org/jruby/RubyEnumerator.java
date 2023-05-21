@@ -1301,7 +1301,7 @@ public class RubyEnumerator extends RubyObject implements java.util.Iterator<Obj
     }
 
 
-public static IRubyObject enumeratorProduct(ThreadContext context, IRubyObject recv, IRubyObject[] args) {
+    public static IRubyObject enumeratorProduct(ThreadContext context, IRubyObject recv, IRubyObject[] args) {
     Ruby runtime = context.runtime;
     RubyEnumerator enumerator = (RubyEnumerator) recv;
 
@@ -1346,6 +1346,9 @@ private static void generateCartesianProductHelper(RubyEnumerable[] arrays, IRub
         }
     }
 }
+
+
+
 
 }
 
